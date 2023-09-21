@@ -9,7 +9,19 @@
 
 
     //PROCESSAMENTO
+    const num = Number(prompt("Informe o valor desejado : "))
+    let primo = 0;
 
+    for (let contador = 1; contador <= num; contador++) {
+        if (num % contador == 0) {
+        primo ++;
+        }
+    }
+    if (primo == 2) {
+        alert(`É um número primo`);
+    } else {
+        alert(`Não é um número primo`)
+    }
 
     //SAÍDA
 

@@ -7,10 +7,28 @@
 
     //ENTRADA
 
-    
-    //PROCESSAMENTO
 
-    
+    //PROCESSAMENTO
+    const num1 = Number(prompt("Informe um número"));
+    const num2 = Number(prompt("Informe um número maior que o interior:"));
+    let numImpar = []
+
+    //PROCESSAMENTO
+    if (num1 < num2) {
+        for (let contador = num1; contador <= num2; contador++) {
+            if (contador % 2 != 0) {
+                numImpar.push(contador);
+            }
+        }
+        alert(`Os números impares são: ${numImpar.join(", ")}.`)
+    }
+    else if (num2 <= num1) {
+        alert("ERROR número 1 tem que ser menor que número 2.")
+    }
+    else {
+        alert("Apenas letras")
+    }
+
     //SAÍDA
 
 </script>
