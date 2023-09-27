@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
+    let ano = 0
     
     //PROCESSAMENTO
-
+    for (let contador=8000; contador<=20000; contador=contador*1.03){
+        if(contador<20000){
+            ano++
+        }
+    }
     
     //SAÍDA
+    alert(`Irá precisar de ${ano} anos para a população chegar em 20000`);
 
 </script>
